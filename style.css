@@ -1,0 +1,130 @@
+/* freeCodeCamp Tribute Page Project */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sombra {
+    text-shadow: 5px 5px 10px #777;
+}
+
+/** Main Container **/
+
+#main {
+ max-width: 1280px;
+ max-height: 100%;
+ margin: 30px auto;
+ padding: 50px;
+ background-color: #dddddd;
+ border-radius: 5px;
+ font-family: Roboto, sans-serif;
+ list-style: none;
+}
+
+#title {
+ text-align: center;
+   font-size: 7vh;
+   color: #000;
+}
+
+/* Image container */
+
+#main > p {
+ text-align: center;
+   font-size: 3vh;
+   font-style: italic;
+}
+
+#img-div {
+ max-width: 600px;
+ margin: 0 auto;
+ padding: 15px;
+ background-color: #ffffff;
+ border-radius: 5px;
+ font-size: 2.2vh;
+ font-style: italic;
+ margin-bottom: 20px;
+ box-shadow: 10px 10px 10px #999;
+}
+
+#image {
+ display: block;
+ width: 100%;
+ max-width: 600px;
+ height: auto;
+ padding-bottom: 20px;
+}
+
+/* End of Image container */
+
+/* Tribute info */
+
+#tribute-info  {
+ max-width: 600px;
+ margin: 0 auto;
+ text-align: justify;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #999;
+}
+
+#tribute-info > h3 {
+text-align: center;
+}
+
+#tribute-info > ul li {
+ margin-bottom: 10px;
+ line-height: 30px;
+ 
+}
+
+/* End of Tribute info */
+
+/* Footer info */
+
+h5 {
+ text-align: center;
+ padding-top: 10px;
+ 
+}
+
+a {
+ text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover, a:active {
+  color: purple;
+}
+
+
+/* End of Footer info */
+
+ /* Scroll up Button */
+
+ .scroll-up-btn i {
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: 1.4rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color:  rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+  text-shadow: 5px 5px 10px #777;
+}
+
+.scroll-up-btn i:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+ /* End of Scroll up Button */
