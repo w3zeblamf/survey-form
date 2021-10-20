@@ -1,2 +1,30 @@
-/* freeCodeCamp Tribute Page Project */
+/* freeCodeCamp survey form */
 
+/* Project Name: Apple eCommerce 
+***************************************** */
+/* Set the font size (Google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* --Reset and Common Styles-- 
+********************************/
+/* The asterisk (*) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page. The asterisk can also be followed by a selector while using to select a child object. This selector is useful when we want to select all the elements on the page. */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* REM: Relative to font-size of the root element: Equal to the computed value of font-size on the root element. When specified on the font-size property of the root element, the rem units refer to the property's initial value. This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px
+
+We are going to use 'ram' as the measurement unit. By default 1 ram = 16 pixels, because the font size of the HTML element  is equal to 16 pixels.
+
+To convert one ram into then pixels, we have to decrease the font size of the HTML element. We need to make it sixty two point five percent So, in this case, one rem (1rem) will be equal to ten pixels (10px). */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
