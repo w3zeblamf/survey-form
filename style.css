@@ -32,10 +32,10 @@ We are going to use 'ram' as the measurement unit. By default 1 ram = 16 pixels,
 To convert one ram into then pixels, we have to decrease the font size of the HTML element. We need to make it sixty two point five percent So, in this case, one rem (1rem) will be equal to ten pixels (10px). */
 
 html {
-  font-size: 62.5%;
   --color-white: #f3f3f3;
   --color-darkblue: #1b1b32;
-  --color-darkblue-alpha: rgba(27, 27, 58, 0.8)
+  --color-darkblue-alpha: rgba(27, 27, 58, 0.8);
+  --color-green: #37af65;
 }
 
 body {
@@ -172,5 +172,29 @@ form {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.22rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: .2rem;
+  cursor: pointer;
+}
 /* End of Form style */
 
