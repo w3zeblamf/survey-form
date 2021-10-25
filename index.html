@@ -1,178 +1,146 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome 6.0.0-beta2 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- My CSS stylesheet-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Survey Form</title>
-  </head>
-	
-  <body>
-    <!--Main container-->
-   <div class="container">
-	   
-	   <!--Header-->
-	  <header class="header">
-		  <h1 id="title" class="text-center">freeCodeCamp Survey Form Project</h1>
-		  <p id="description" class="description text-center">
-		   Thank you for taking the time to help us improve the platform
-	   </p>
-	   </header>
-	   <!--End of Header-->
-	   
-	   <!--Form-->
-	   <form id="survey-form">
 
-	   <div class="form-group">
-		   <label id="name-label" for="name">Name</label>
-		   <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
-	  </div>
-		   
-	  <div class="form-group">
-		  <label id="email-label" for="email">Email</label>
-		  <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required/>
-	 </div>
-		   
-	<div class="form-group">
-		   <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
-		<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
-	</div>
-		   
-	<div class="form-group">
-	<p>Which option best describe your current role?</p>
-	<select name="role" id="dropdown" class="form-control" required>
-		<option disabled selected value>Select current role</option>
-		<option value="student">Student</option>
-		<option value="job">Full Time Job</option>
-		<option value="">Full Time Learner</option>
-		<option value="">Prefer not to say</option>
-		<option value="">Other</option>
-	</select>
-	</div>
-		   
-	<div class="form-group">
-		<p>Would you recommend freeCodeCamp to a friend</p>
-		
-		
-		<label>
-		<input name="user-recommend"
-			   value="definitely"
-			   type="radio"
-			   class="input-radio"
-			   checked>Definitely
-		</label>
-			
-       <label>
-		<input name="user-recommend"
-			   value="maybe"
-			   type="radio"
-			   class="input-radio"
-			   >Maybe
-		</label>
-		
-		<label>
-		<input name="user-recommend"
-			   value="not-sure"
-			   type="radio"
-			   class="input-radio"
-			   >Not sure
-		</label>
-		
-	</div>
-		   
-	<div class="form-group">
-    <p>What is your favorite feature of freeCodeCamp?</p>
-		
-		<select name="mostLike" id="most-like" class="form-control" required>
-		<option disabled selected value>Select an option</option>
-		<option value="challenge">Challenge</option>
-		<option value="projects">Projects</option>
-		<option value="community">Community</option>
-		<option value="openSource">Open Source</option>
-		</select>
-   </div>
-		   
-			<div class="form-group">
-				<p>
-					What would you like to see improved?
-					<span class="clue">(Check all that apply)</span>
-				</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				<label>
-					<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects
-				</label>
+  <!-- Font Awesome 6.0.0-beta2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
-				<label>
-					<input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
-				</label>
+  <!-- My CSS stylesheet-->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Survey Form</title>
+</head>
 
-				<label>
-					<input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization
-				</label>
+<body>
+  <!--Main container-->
 
-				<label>
-					<input name="prefer" value="challenge" type="checkbox" class="input-checkbox">Challenges
-				</label>
 
-				<label>
-					<input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community
-				</label>
+  <!--Header-->
+  <header class="header">
+    <h1 id="title" class="text-center"><i class="fas fa-laptop-code"></i> freeCodeCamp Survey Form</h1>
+    <p id="description" class="description text-center">
+      Your opinion is very important to us for improving the platform
+    </p>
+  </header>
+  <!--End of Header-->
 
-				<label>
-					<input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help rooms
-				</label>
+  <!--Form section-->
+  <form id="survey-form" >
 
-				<label>
-					<input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos
-				</label>
+    <!-- Input Text Container -->
+    <div class="form-control">
+      <label for="name" id="name-label"> <i class="fas fa-user"></i> Name</label>
 
-				<label>
-					<input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups
-				</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <!-- End Input Text Container -->
 
-				<label>
-					<input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups
-				</label>
+    <!-- Input Email Container -->
+    <div class="form-control">
+      <label for="email" id="email-label"><i class="far fa-envelope"></i> Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <!-- End of Input Email Container -->
 
-				<label>
-					<input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki
-				</label>
+    <!-- Input Age Container -->
+    <div class="form-control">
+      <label for="age" id="number-label"><i class="far fa-address-card"></i> Age</label>
+      <input type="number" name="age" id="number" min="10" max="99" placeholder="Enter your age">
+    </div>
+    <!-- End of Input Age Container -->
 
-				<label>
-					<input name="prefer" value="forum" type="checkbox" class="input-checkbox">forum
-				</label>
+    <!-- Dropdown container -->
+    <div class="form-control">
+      <label for="role" id="label-role">
+        Which option best describe you?
+      </label>
+      <!-- Dropdown options -->
+      <select name="role"  id="dropdown" required>
+        <option value="student">Student</option>
+        <option value="intern">Intern</option>
+        <option value="Professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+      <!-- End of Dropdown options -->
+    </div>
+    <!-- End of Dropdown container -->
 
-				<label>
-					<input name="prefer" value="Additional Courses" type="checkbox" class="input-checkbox">Additional Courses
-				</label>
-			</div>
 
-			<div class="form-group">
-			<p>Any comments or suggestion</p>
-			<textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea></div>
+    <!-- Input Radio Container -->
+<div class="form-control">
+  <label>Would you recommend freeCodeCamp to a friend?</label>
+  <!-- Input Type Radio Buttons -->
+<label for="recommend-1"></label>
+<input type="radio" id="recommend-1" name="recommend" value="yes"> Yes
 
-			<div class="form-group">
-				<button type="submit" id="submit" class="submit-button">Submit</button>
-			</div>
-	</form>
-	  <!--End of Form-->
-			
-   </div>
-    <!--End of main container-->
+<label for="recommend-2"></label>
+<input type="radio" id="recommend-2" name="recommend" value="maybe"> Maybe
 
-    <!-- FreeCodeCamp CDN -->
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+<label for="recommend-3"></label>
+<input type="radio" id="recommend-3" name="recommend" value="no"> No
+  <!-- End of Input Type Radio Buttons -->
+</div>
+<!-- End of Input Radio Container -->
+
+<!-- Input Checkbox Container -->
+<div class="form-control">
+  <label>Languages and Frameworks known <small>(Check all that apply)</small></label>
+
+  <!-- Input type Checkbox -->
+<label for="inp-1">
+  <input type="checkbox" name="inp" value="c"> C
+</label>
+<label for="inp-2">
+  <input type="checkbox" name="inp" value="c++"> C++
+</label>
+<label for="inp-3">
+  <input type="checkbox" name="inp" value="java"> Java
+</label>
+<label for="inp-4">
+  <input type="checkbox" name="inp" value="python"> Python
+</label>
+<label for="inp-5">
+  <input type="checkbox" name="inp" value="java-script"> JavaScript
+</label>
+<label for="inp-6">
+  <input type="checkbox" name="inp" value="react"> React
+</label>
+<label for="inp-7">
+  <input type="checkbox" name="inp" value="angular"> Angular
+</label>
+<label for="inp-7">
+  <input type="checkbox" name="inp" value="django"> Django
+</label>
+<label for="inp-7">
+  <input type="checkbox" name="inp" value="spring"> Spring
+</label>
+  <!-- End of Input type Checkbox -->
+
+</div>
+<!-- End of Input Checkbox Container -->
+
+<!-- Comments container -->
+<div class="form-control">
+  <label for="comment"> <i class="far fa-comment-alt"></i> Any comments or suggestion</label>
+  <!-- Text area -->
+  <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+  <!-- End of Text area -->
+</div>
+<!-- End of Comments container -->
+
+<!-- Submit button -->
+<button type="submit" id="submit" value="submit"><i class="fas fa-check"></i> Submit</button>
+<!-- End of Submit button -->
+
+  </form>
+  <!--End of Form section-->
+
+
+  <!-- FreeCodeCamp CDN -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
